@@ -1,0 +1,10 @@
+#pragma once
+#include iostream
+#include time.h
+
+namespace WinFormTest {
+
+	using namespace System;
+	using namespace SystemComponentModel;
+	using namespace SystemCollections;
+	using namespace SystemWindowsForms;
