@@ -1,10 +1,10 @@
-#pragma once
-#include <iostream>
-#include <time.h>
+	using namespace System::Data;
+	using namespace System::Drawing;
 
-namespace WinFormTest {
-
-	using namespace System;
-	using namespace System::ComponentModel;
-	using namespace System::Collections;
-	using namespace System::Windows::Forms;
+	/// <summary>
+	/// Summary for MyForm
+	/// </summary>
+	public ref class MyForm : public System::Windows::Forms::Form
+	{
+	public:
+		MyForm(void)
