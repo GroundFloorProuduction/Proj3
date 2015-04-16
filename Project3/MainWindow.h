@@ -121,6 +121,9 @@ namespace Project3 {
 
 		}
 #pragma endregion
+	private: System::Void MainWindow_Load(System::Object^  sender, System::EventArgs^  e) {
+	} //DONT FUCK WITH THIS LINE OR THE ONE ABOVE, OR IT WILL BREAK.
+
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 		MessageBox::Show("something new cool lol losasdls");
 	}
