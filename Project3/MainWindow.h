@@ -47,6 +47,7 @@ namespace Project3 {
 
 
 
+
 	protected:
 
 	private:
@@ -99,6 +100,7 @@ namespace Project3 {
 			this->Tab_Ace->TabIndex = 2;
 			this->Tab_Ace->Text = L"Ace";
 			this->Tab_Ace->UseVisualStyleBackColor = true;
+			this->Tab_Ace->UseWaitCursor = true;
 			this->Tab_Ace->Click += gcnew System::EventHandler(this, &MainWindow::tabPage1_Click_1);
 			// 
 			// Tab_James
@@ -126,11 +128,8 @@ namespace Project3 {
 		}
 #pragma endregion
 	private: System::Void MainWindow_Load(System::Object^  sender, System::EventArgs^  e) {
-	} //DONT FUCK WITH THIS LINE OR THE ONE ABOVE, OR IT WILL BREAK.
+	} //DONT FUCK WITH THIS LINE OR THE ONE ABOVE, OR SHIT WILL BREAK.
 
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		MessageBox::Show("something new cool lol losasdls");
-	}
 	private: System::Void tabPage1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void tabPage1_Click_1(System::Object^  sender, System::EventArgs^  e) {
