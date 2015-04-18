@@ -38,11 +38,14 @@ namespace Project3 {
 			}
 		}
 	private: System::Windows::Forms::TabControl^  tabControl1;
+	private: System::Windows::Forms::TabPage^  Tab_Geoff;
 	protected:
 
-	private: System::Windows::Forms::TabPage^  tabPage2;
-	private: System::Windows::Forms::TabPage^  tabPage1;
-	private: System::Windows::Forms::TabPage^  tabPage3;
+
+	private: System::Windows::Forms::TabPage^  Tab_Ace;
+	private: System::Windows::Forms::TabPage^  Tab_James;
+
+
 
 	protected:
 
@@ -60,52 +63,53 @@ namespace Project3 {
 		void InitializeComponent(void)
 		{
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->Tab_Geoff = (gcnew System::Windows::Forms::TabPage());
+			this->Tab_Ace = (gcnew System::Windows::Forms::TabPage());
+			this->Tab_James = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
 			// 
-			this->tabControl1->Controls->Add(this->tabPage2);
-			this->tabControl1->Controls->Add(this->tabPage1);
-			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Controls->Add(this->Tab_Geoff);
+			this->tabControl1->Controls->Add(this->Tab_Ace);
+			this->tabControl1->Controls->Add(this->Tab_James);
 			this->tabControl1->Location = System::Drawing::Point(12, 12);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(1005, 620);
 			this->tabControl1->TabIndex = 0;
 			// 
-			// tabPage2
+			// Tab_Geoff
 			// 
-			this->tabPage2->Location = System::Drawing::Point(4, 22);
-			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(997, 594);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Geoff";
-			this->tabPage2->UseVisualStyleBackColor = true;
+			this->Tab_Geoff->Location = System::Drawing::Point(4, 22);
+			this->Tab_Geoff->Name = L"Tab_Geoff";
+			this->Tab_Geoff->Padding = System::Windows::Forms::Padding(3);
+			this->Tab_Geoff->Size = System::Drawing::Size(997, 594);
+			this->Tab_Geoff->TabIndex = 1;
+			this->Tab_Geoff->Text = L"Geoff";
+			this->Tab_Geoff->UseVisualStyleBackColor = true;
 			// 
-			// tabPage1
+			// Tab_Ace
 			// 
-			this->tabPage1->Location = System::Drawing::Point(4, 22);
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(997, 594);
-			this->tabPage1->TabIndex = 2;
-			this->tabPage1->Text = L"Ace";
-			this->tabPage1->UseVisualStyleBackColor = true;
+			this->Tab_Ace->Location = System::Drawing::Point(4, 22);
+			this->Tab_Ace->Name = L"Tab_Ace";
+			this->Tab_Ace->Padding = System::Windows::Forms::Padding(3);
+			this->Tab_Ace->Size = System::Drawing::Size(997, 594);
+			this->Tab_Ace->TabIndex = 2;
+			this->Tab_Ace->Text = L"Ace";
+			this->Tab_Ace->UseVisualStyleBackColor = true;
+			this->Tab_Ace->Click += gcnew System::EventHandler(this, &MainWindow::tabPage1_Click_1);
 			// 
-			// tabPage3
+			// Tab_James
 			// 
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(997, 594);
-			this->tabPage3->TabIndex = 3;
-			this->tabPage3->Text = L"James";
-			this->tabPage3->UseVisualStyleBackColor = true;
+			this->Tab_James->Location = System::Drawing::Point(4, 22);
+			this->Tab_James->Name = L"Tab_James";
+			this->Tab_James->Padding = System::Windows::Forms::Padding(3);
+			this->Tab_James->Size = System::Drawing::Size(997, 594);
+			this->Tab_James->TabIndex = 3;
+			this->Tab_James->Text = L"James";
+			this->Tab_James->UseVisualStyleBackColor = true;
 			// 
 			// MainWindow
 			// 
@@ -129,5 +133,7 @@ namespace Project3 {
 	}
 	private: System::Void tabPage1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
-	};
+	private: System::Void tabPage1_Click_1(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }
